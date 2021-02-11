@@ -19,3 +19,7 @@ class Car(models.Model):
 
 class Service(models.Model):
     name = models.CharField( max_length=50)
+
+
+    def __str__(self): # before this admin area only show "car object", not any details
+        return self.name
