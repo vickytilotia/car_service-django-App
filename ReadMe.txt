@@ -17,3 +17,24 @@ tests.py  - tests the app
 
 
 url patterns ----> views(models ---->views)  ------>templates
+
+migrations vs models:-
+define the structure of database
+migrations generate the script to change the database
+
+when is migrations needed?
+adding a new table
+adding/remooving/changing field
+
+commands for migrations:
+python manage.py makemigrations       # generate migrations
+python manage.py migrate              # apply the generated migrations
+python manage.py showmigrations       # list project migrations and their status
+
+
+To create a super user
+
+python manage.py createsuperuser
+username vickytilotia
+password 123456
+
