@@ -38,3 +38,5 @@ python manage.py createsuperuser
 username vickytilotia
 password 123456
 
+
+This is project is not functional by now!!!

@@ -1,0 +1,25 @@
+<div>
+
+    {%for car in cars%}
+    <div class ='carname'>
+        <a href="{% url 'car_detail'  car.id  %}">
+        <h3> {{car.car_model | capfirst}} </h3>
+        </a>
+        
+    
+        <p>{{car.car_number}} </p>
+        {%if car.year_old%}
+        <p>Year Old: {{car.year_old}} </p>
+        {% endif %}
+        
+        <p class = "hidden">{{car.desc}} </p>
+        
+    </div>
+    {% endfor %}
+
+
+
+
+
+
+</div>
